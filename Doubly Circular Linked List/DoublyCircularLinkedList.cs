@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Doubly_Circular_Linked_List
 {
-    public class DoublyCircularLinkedList<T>
+    public class DoublyCircularLinkedList<T> : IEnumerable<T>
     {
         public class Node
         {
@@ -33,6 +34,9 @@ namespace Doubly_Circular_Linked_List
                 return Head.Prev;
             }
         }
+
+       
+
         public int Count = 0;
 
         //Prev & next on ANY node should NEVER be null
@@ -71,7 +75,9 @@ namespace Doubly_Circular_Linked_List
         {
             if (Head == null)
             {
-                Head = new Node(value, this, Head, Head);
+                Head = new Node(value, this);
+                Head.Next = Head;
+                Head.Prev = Head;
             }
             else
             {
@@ -176,6 +182,7 @@ namespace Doubly_Circular_Linked_List
             {
                 return null;
             }
+
             Node temp = Head;
             while (!temp.Value.Equals(item))
             {
@@ -204,6 +211,23 @@ namespace Doubly_Circular_Linked_List
                 }
             }
             return temp;
+        }
+
+
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            var curr = Head;
+            do
+            {
+                yield return curr.Value;
+                curr = curr.Next;
+            } while (curr != Head);
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 }

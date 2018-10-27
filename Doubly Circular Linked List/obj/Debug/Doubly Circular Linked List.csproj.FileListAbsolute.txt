@@ -1,2 +1,7 @@
 C:\Users\EdanSaedi\Documents\Github\Doubly Circular Linked List\Doubly Circular Linked List\obj\Debug\Doubly Circular Linked List.csprojAssemblyReference.cache
 C:\Users\EdanSaedi\Documents\Github\Doubly Circular Linked List\Doubly Circular Linked List\obj\Debug\Doubly Circular Linked List.csproj.CoreCompileInputs.cache
+C:\Users\EdanSaedi\Documents\Github\Doubly Circular Linked List\Doubly Circular Linked List\bin\Debug\Doubly Circular Linked List.exe.config
+C:\Users\EdanSaedi\Documents\Github\Doubly Circular Linked List\Doubly Circular Linked List\bin\Debug\Doubly Circular Linked List.exe
+C:\Users\EdanSaedi\Documents\Github\Doubly Circular Linked List\Doubly Circular Linked List\bin\Debug\Doubly Circular Linked List.pdb
+C:\Users\EdanSaedi\Documents\Github\Doubly Circular Linked List\Doubly Circular Linked List\obj\Debug\Doubly Circular Linked List.exe
+C:\Users\EdanSaedi\Documents\Github\Doubly Circular Linked List\Doubly Circular Linked List\obj\Debug\Doubly Circular Linked List.pdb
